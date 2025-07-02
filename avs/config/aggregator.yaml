@@ -1,0 +1,17 @@
+aggregator:
+  server_ip_port_address: "localhost:8090"
+  eth_rpc_url: "https://sepolia.infura.io/v3/YOUR_INFURA_KEY"
+  registry_coordinator_address: "0x0000000000000000000000000000000000000000"
+  operator_state_retriever_address: "0x0000000000000000000000000000000000000000"
+  aggregator_private_key_path: "./keys/aggregator.ecdsa.key.json"
+  eigen_metrics_ip_port_address: "localhost:9092"
+  enable_metrics: true
+
+auction:
+  response_timeout: "30s"
+  quorum_threshold: 67  # 67% threshold
+  min_operators: 3
+
+logging:
+  level: "info"
+  format: "json"

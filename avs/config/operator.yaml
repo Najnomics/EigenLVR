@@ -1,0 +1,23 @@
+operator:
+  ecdsa_private_key_store_path: "./keys/operator.ecdsa.key.json"
+  bls_private_key_store_path: "./keys/operator.bls.key.json"
+  eth_rpc_url: "https://sepolia.infura.io/v3/YOUR_INFURA_KEY"
+  eth_ws_url: "wss://sepolia.infura.io/ws/v3/YOUR_INFURA_KEY"
+  registry_coordinator_address: "0x0000000000000000000000000000000000000000"
+  operator_state_retriever_address: "0x0000000000000000000000000000000000000000"
+  aggregator_server_ip_port_address: "localhost:8090"
+  register_operator_on_startup: true
+  eigen_metrics_ip_port_address: "localhost:9090"
+  enable_metrics: true
+  node_api_ip_port_address: "localhost:9091"
+  enable_node_api: true
+
+auction:
+  min_bid: "1000000000000000"  # 0.001 ETH
+  max_duration: "10s"
+  price_oracle: "chainlink"
+  lvr_threshold: "50"  # 0.5% in basis points
+
+logging:
+  level: "info"
+  format: "json"

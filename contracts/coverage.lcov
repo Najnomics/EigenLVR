@@ -1,0 +1,834 @@
+Warning: optimizer settings and `viaIR` have been disabled for accurate coverage reports.
+If you encounter "stack too deep" errors, consider using `--ir-minimum` which enables `viaIR` with minimum optimization resolving most of the errors
+Compiling 87 files with Solc 0.8.26
+Solc 0.8.26 finished in 11.39s
+Compiler run successful with warnings:
+Warning (2519): This declaration shadows an existing declaration.
+   --> test/HookMinerFixed.t.sol:268:14:
+    |
+268 |             (address hookAddress, bytes32 salt) = HookMiner.find(
+    |              ^^^^^^^^^^^^^^^^^^^
+Note: The shadowed declaration is here:
+   --> test/HookMinerFixed.t.sol:283:10:
+    |
+283 |         (address hookAddress, ) = HookMiner.find(
+    |          ^^^^^^^^^^^^^^^^^^^
+
+Warning (5667): Unused function parameter. Remove or comment out the variable name to silence this warning.
+   --> src/EigenLVRHook.sol:524:36:
+    |
+524 |     function _getSqrtPriceFromPool(PoolKey calldata key) internal view returns (uint160) {
+    |                                    ^^^^^^^^^^^^^^^^^^^^
+
+Warning (5667): Unused function parameter. Remove or comment out the variable name to silence this warning.
+   --> src/ChainlinkPriceOracle.sol:118:9:
+    |
+118 |         uint256 timestamp
+    |         ^^^^^^^^^^^^^^^^^
+
+Warning (2072): Unused local variable.
+  --> src/ProductionPriceFeedConfig.sol:73:9:
+   |
+73 |         address USDT = 0xdAC17F958D2ee523a2206206994597C13D831ec7;
+   |         ^^^^^^^^^^^^
+
+Warning (5667): Unused function parameter. Remove or comment out the variable name to silence this warning.
+   --> src/ProductionPriceFeedConfig.sol:190:9:
+    |
+190 |         string memory description
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Warning (5667): Unused function parameter. Remove or comment out the variable name to silence this warning.
+   --> src/ProductionPriceFeedConfig.sol:213:9:
+    |
+213 |         address feed1,
+    |         ^^^^^^^^^^^^^
+
+Warning (5667): Unused function parameter. Remove or comment out the variable name to silence this warning.
+   --> src/ProductionPriceFeedConfig.sol:214:9:
+    |
+214 |         string memory description
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Warning (5667): Unused function parameter. Remove or comment out the variable name to silence this warning.
+   --> script/BaseDeployment.s.sol:150:9:
+    |
+150 |         ChainlinkPriceOracle priceOracle,
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Warning (5667): Unused function parameter. Remove or comment out the variable name to silence this warning.
+   --> script/DeploymentUtils.s.sol:165:9:
+    |
+165 |         address priceOracle,
+    |         ^^^^^^^^^^^^^^^^^^^
+
+Warning (5667): Unused function parameter. Remove or comment out the variable name to silence this warning.
+  --> script/EmergencyDeployment.s.sol:93:9:
+   |
+93 |         address deployer,
+   |         ^^^^^^^^^^^^^^^^
+
+Warning (5667): Unused function parameter. Remove or comment out the variable name to silence this warning.
+   --> script/MultiNetworkDeployment.s.sol:106:9:
+    |
+106 |         address deployer,
+    |         ^^^^^^^^^^^^^^^^
+
+Warning (5667): Unused function parameter. Remove or comment out the variable name to silence this warning.
+  --> script/ProductionDeployment.s.sol:62:31:
+   |
+62 |     function _mineHookAddress(address deployer, address feeRecipient) internal {
+   |                               ^^^^^^^^^^^^^^^^
+
+Warning (5667): Unused function parameter. Remove or comment out the variable name to silence this warning.
+   --> script/ProductionDeployment.s.sol:104:9:
+    |
+104 |         address deployer,
+    |         ^^^^^^^^^^^^^^^^
+
+Warning (5667): Unused function parameter. Remove or comment out the variable name to silence this warning.
+  --> script/SimpleDeployment.s.sol:38:9:
+   |
+38 |         address deployer,
+   |         ^^^^^^^^^^^^^^^^
+
+Warning (5667): Unused function parameter. Remove or comment out the variable name to silence this warning.
+   --> script/TestnetDeployment.s.sol:121:9:
+    |
+121 |         address deployer,
+    |         ^^^^^^^^^^^^^^^^
+
+Warning (2072): Unused local variable.
+   --> script/TestnetDeployment.s.sol:147:9:
+    |
+147 |         ChainlinkPriceOracle oracle = ChainlinkPriceOracle(result.priceOracle);
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Warning (5667): Unused function parameter. Remove or comment out the variable name to silence this warning.
+   --> script/UpgradeDeployment.s.sol:216:9:
+    |
+216 |         address deployer,
+    |         ^^^^^^^^^^^^^^^^
+
+Warning (2072): Unused local variable.
+   --> test/EigenLVRHook.t.sol:404:9:
+    |
+404 |         uint256 initialBalance = address(hook).balance;
+    |         ^^^^^^^^^^^^^^^^^^^^^^
+
+Warning (2072): Unused local variable.
+   --> test/EigenLVRHookAdmin.t.sol:243:13:
+    |
+243 |             uint256 startTime,
+    |             ^^^^^^^^^^^^^^^^^
+
+Warning (2072): Unused local variable.
+   --> test/EigenLVRHookAdmin.t.sol:244:13:
+    |
+244 |             uint256 duration,
+    |             ^^^^^^^^^^^^^^^^
+
+Warning (2072): Unused local variable.
+   --> test/EigenLVRHookAdmin.t.sol:249:13:
+    |
+249 |             uint256 totalBids
+    |             ^^^^^^^^^^^^^^^^^
+
+Warning (2072): Unused local variable.
+   --> test/EigenLVRHookAuction.t.sol:178:9:
+    |
+178 |         uint256 operatorBalanceBefore = operator.balance;
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Warning (2072): Unused local variable.
+   --> test/EigenLVRHookAuction.t.sol:185:9:
+    |
+185 |         uint256 avsAmount = (bidAmount * hook.AVS_REWARD_PERCENTAGE()) / hook.BASIS_POINTS();
+    |         ^^^^^^^^^^^^^^^^^
+
+Warning (2072): Unused local variable.
+  --> test/HookMiner.t.sol:42:31:
+   |
+42 |         (address hookAddress, bytes32 salt) = HookMiner.find(
+   |                               ^^^^^^^^^^^^
+
+Warning (2072): Unused local variable.
+  --> test/HookMiner.t.sol:96:32:
+   |
+96 |         (address hookAddress1, bytes32 salt1) = HookMiner.find(
+   |                                ^^^^^^^^^^^^^
+
+Warning (2072): Unused local variable.
+   --> test/HookMiner.t.sol:103:32:
+    |
+103 |         (address hookAddress2, bytes32 salt2) = HookMiner.find(
+    |                                ^^^^^^^^^^^^^
+
+Warning (2072): Unused local variable.
+   --> test/HookMiner.t.sol:354:35:
+    |
+354 |             (address hookAddress, bytes32 salt) = HookMiner.find(
+    |                                   ^^^^^^^^^^^^
+
+Warning (2072): Unused local variable.
+   --> test/HookMiner.t.sol:369:28:
+    |
+369 |         (address hookAddr, bytes32 resultSalt) = HookMiner.find(
+    |                            ^^^^^^^^^^^^^^^^^^
+
+Warning (2072): Unused local variable.
+  --> test/HookMinerComprehensive.t.sol:83:31:
+   |
+83 |         (address hookAddress, bytes32 salt) = HookMiner.find(
+   |                               ^^^^^^^^^^^^
+
+Warning (2072): Unused local variable.
+  --> test/HookMinerComprehensive.t.sol:96:32:
+   |
+96 |         (address hookAddress1, bytes32 salt1) = HookMiner.find(
+   |                                ^^^^^^^^^^^^^
+
+Warning (2072): Unused local variable.
+   --> test/HookMinerComprehensive.t.sol:103:32:
+    |
+103 |         (address hookAddress2, bytes32 salt2) = HookMiner.find(
+    |                                ^^^^^^^^^^^^^
+
+Warning (5667): Unused try/catch parameter. Remove or comment out the variable name to silence this warning.
+   --> test/HookMinerComprehensive.t.sol:250:64:
+    |
+250 |         try this.attemptFind(flags) returns (address hookAddr, bytes32 salt) {
+    |                                                                ^^^^^^^^^^^^
+
+Warning (5667): Unused try/catch parameter. Remove or comment out the variable name to silence this warning.
+   --> test/UnitTestsForCoverage.t.sol:268:69:
+    |
+268 |         try this.attemptMining(flags) returns (address hookAddress, bytes32 salt) {
+    |                                                                     ^^^^^^^^^^^^
+
+Warning (2018): Function state mutability can be restricted to pure
+   --> src/EigenLVRHook.sol:524:5:
+    |
+524 |     function _getSqrtPriceFromPool(PoolKey calldata key) internal view returns (uint160) {
+    |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Warning (2018): Function state mutability can be restricted to pure
+   --> script/BaseDeployment.s.sol:281:5:
+    |
+281 |     function logDeploymentSummary(DeploymentResult memory result) internal view {
+    |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Warning (2018): Function state mutability can be restricted to pure
+   --> script/EmergencyDeployment.s.sol:120:5:
+    |
+120 |     function _logEmergencyWarnings() internal view {
+    |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Warning (2018): Function state mutability can be restricted to pure
+  --> script/UpgradeDeployment.s.sol:85:5:
+   |
+85 |     function _loadFromDeploymentFile() internal {
+   |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Warning (2018): Function state mutability can be restricted to pure
+   --> test/AuctionLib.t.sol:246:5:
+    |
+246 |     function test_BidStruct() public {
+    |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Warning (2018): Function state mutability can be restricted to pure
+   --> test/AuctionLibEnhanced.t.sol:372:5:
+    |
+372 |     function test_AuctionStruct_AllFields() public {
+    |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Warning (2018): Function state mutability can be restricted to pure
+   --> test/AuctionLibEnhanced.t.sol:403:5:
+    |
+403 |     function test_BidStruct_AllFields() public {
+    |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Warning (2018): Function state mutability can be restricted to pure
+  --> test/AuctionLibTest.t.sol:61:5:
+   |
+61 |     function test_GenerateCommitment() public {
+   |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Warning (2018): Function state mutability can be restricted to pure
+  --> test/AuctionLibTest.t.sol:72:5:
+   |
+72 |     function test_VerifyCommitment() public {
+   |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Warning (2018): Function state mutability can be restricted to pure
+   --> test/AuctionLibTest.t.sol:107:5:
+    |
+107 |     function test_FuzzCommitmentGeneration(
+    |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Warning (2018): Function state mutability can be restricted to pure
+   --> test/AuctionLibTest.t.sol:116:5:
+    |
+116 |     function test_FuzzCommitmentVerification(
+    |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Warning (2018): Function state mutability can be restricted to view
+   --> test/EigenLVRComponents.t.sol:146:5:
+    |
+146 |     function test_AuctionLib_AuctionState() public {
+    |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Warning (2018): Function state mutability can be restricted to pure
+  --> test/HookMiner.t.sol:38:5:
+   |
+38 |     function test_Find_SingleFlag() public {
+   |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Warning (2018): Function state mutability can be restricted to pure
+  --> test/HookMinerComprehensive.t.sol:62:5:
+   |
+62 |     function test_Find_SingleFlag_Realistic() public {
+   |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Warning (2018): Function state mutability can be restricted to pure
+  --> test/HookMinerComprehensive.t.sol:79:5:
+   |
+79 |     function test_Find_EasyFlags() public {
+   |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Warning (2018): Function state mutability can be restricted to pure
+  --> test/HookMinerComprehensive.t.sol:93:5:
+   |
+93 |     function test_Find_DifferentDeployers() public {
+   |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Warning (2018): Function state mutability can be restricted to pure
+   --> test/HookMinerComprehensive.t.sol:116:5:
+    |
+116 |     function test_Find_DifferentBytecode() public {
+    |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Warning (2018): Function state mutability can be restricted to pure
+   --> test/HookMinerComprehensive.t.sol:138:5:
+    |
+138 |     function test_Find_DifferentConstructorArgs() public {
+    |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Warning (2018): Function state mutability can be restricted to pure
+   --> test/HookMinerComprehensive.t.sol:160:5:
+    |
+160 |     function test_Find_SequentialSalts() public {
+    |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Warning (2018): Function state mutability can be restricted to pure
+   --> test/HookMinerComprehensive.t.sol:175:5:
+    |
+175 |     function test_Find_LargerBytecode() public {
+    |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Warning (2018): Function state mutability can be restricted to pure
+   --> test/HookMinerComprehensive.t.sol:195:5:
+    |
+195 |     function test_Find_MediumFlags() public {
+    |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Warning (2018): Function state mutability can be restricted to view
+   --> test/HookMinerComprehensive.t.sol:210:5:
+    |
+210 |     function test_Find_ReasonableTimeout() public {
+    |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Warning (2018): Function state mutability can be restricted to view
+   --> test/HookMinerComprehensive.t.sol:244:5:
+    |
+244 |     function testFuzz_Find_SimpleFlags(uint8 flagByte) public {
+    |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Warning (2018): Function state mutability can be restricted to pure
+ --> test/HookMinerDebugTest.t.sol:9:5:
+  |
+9 |     function test_DebugFlags() public {
+  |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Warning (2018): Function state mutability can be restricted to pure
+  --> test/UnitTestsForCoverage.t.sol:25:5:
+   |
+25 |     function test_AuctionLib_StructCreation() public {
+   |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Warning (2018): Function state mutability can be restricted to pure
+  --> test/UnitTestsForCoverage.t.sol:56:5:
+   |
+56 |     function test_AuctionLib_BidStructCreation() public {
+   |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Warning (2018): Function state mutability can be restricted to view
+   --> test/UnitTestsForCoverage.t.sol:265:5:
+    |
+265 |     function test_HookMiner_Find_SimpleFlags() public {
+    |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Analysing contracts...
+Running tests...
+
+Ran 33 tests for test/AuctionLib.t.sol:AuctionLibTest
+[PASS] test_AuctionStateTransitions() (gas: 20190)
+[PASS] test_AuctionStructInitialization() (gas: 20605)
+[PASS] test_AuctionTimingEdgeCases() (gas: 12106)
+[PASS] test_AuctionWithMaxDuration() (gas: 14576)
+[PASS] test_BidStruct() (gas: 5973)
+[PASS] test_CommitmentCollisions() (gas: 8305)
+[PASS] test_FuzzCommitmentGeneration(address,uint256,uint256) (runs: 258, μ: 6984, ~: 6984)
+[PASS] test_FuzzCommitmentVerification(address,uint256,uint256,address,uint256,uint256) (runs: 258, μ: 6678, ~: 6678)
+[PASS] test_GenerateCommitment() (gas: 4971)
+[PASS] test_GenerateCommitment_DifferentInputs() (gas: 5056)
+[PASS] test_GenerateCommitment_MaxValues() (gas: 4948)
+[PASS] test_GenerateCommitment_SameInputs() (gas: 5067)
+[PASS] test_GenerateCommitment_ZeroValues() (gas: 4974)
+[PASS] test_GetTimeRemaining_AfterEnd() (gas: 11476)
+[PASS] test_GetTimeRemaining_AtExactEndTime() (gas: 11399)
+[PASS] test_GetTimeRemaining_FullDuration() (gas: 10740)
+[PASS] test_GetTimeRemaining_InactiveAuction() (gas: 3853)
+[PASS] test_GetTimeRemaining_PartialDuration() (gas: 11426)
+[PASS] test_IsAuctionActive_AfterEnd() (gas: 11488)
+[PASS] test_IsAuctionActive_AtExactEndTime() (gas: 11521)
+[PASS] test_IsAuctionActive_AtExactStartTime() (gas: 10863)
+[PASS] test_IsAuctionActive_BeforeStart() (gas: 13728)
+[PASS] test_IsAuctionActive_DuringAuction() (gas: 10556)
+[PASS] test_IsAuctionActive_NotActiveFlag() (gas: 3752)
+[PASS] test_IsAuctionEnded_AfterEnd() (gas: 9227)
+[PASS] test_IsAuctionEnded_AtExactEndTime() (gas: 9191)
+[PASS] test_IsAuctionEnded_BeforeEnd() (gas: 8337)
+[PASS] test_TimeArithmmeticEdgeCases() (gas: 19303)
+[PASS] test_VerifyCommitment_InvalidAmount() (gas: 4938)
+[PASS] test_VerifyCommitment_InvalidBidder() (gas: 5005)
+[PASS] test_VerifyCommitment_InvalidNonce() (gas: 5027)
+[PASS] test_VerifyCommitment_Valid() (gas: 5028)
+[PASS] test_VerifyCommitment_WrongCommitment() (gas: 4226)
+Suite result: ok. 33 passed; 0 failed; 0 skipped; finished in 111.51ms (100.80ms CPU time)
+
+Ran 33 tests for test/AuctionLibEnhanced.t.sol:AuctionLibEnhancedTest
+[PASS] testFuzz_CommitmentGeneration(address,uint256,uint256) (runs: 258, μ: 7030, ~: 7030)
+[PASS] testFuzz_CommitmentVerification_WrongInputs(address,uint256,uint256,address,uint256,uint256) (runs: 258, μ: 6744, ~: 6744)
+[PASS] testFuzz_GetTimeRemaining_RandomTimes(uint128,uint128,uint128,bool) (runs: 257, μ: 18727, ~: 20242)
+[PASS] testFuzz_IsAuctionActive_RandomTimes(uint128,uint128,uint128,bool) (runs: 257, μ: 18192, ~: 19715)
+[PASS] testFuzz_IsAuctionEnded_RandomTimes(uint128,uint128,uint128) (runs: 257, μ: 16981, ~: 17097)
+[PASS] test_AuctionStruct_AllFields() (gas: 8214)
+[PASS] test_BidStruct_AllFields() (gas: 6145)
+[PASS] test_GenerateCommitment_AllZeros() (gas: 4931)
+[PASS] test_GenerateCommitment_MaxValues() (gas: 4913)
+[PASS] test_GetTimeRemaining_ExactOverflowBoundary() (gas: 17151)
+[PASS] test_GetTimeRemaining_InfiniteDuration_AfterStart() (gas: 16462)
+[PASS] test_GetTimeRemaining_InfiniteDuration_AtStart() (gas: 13101)
+[PASS] test_GetTimeRemaining_InfiniteDuration_BeforeStart() (gas: 16108)
+[PASS] test_GetTimeRemaining_NoOverflow_AtEnd() (gas: 17210)
+[PASS] test_GetTimeRemaining_NoOverflow_PartialTime() (gas: 17364)
+[PASS] test_GetTimeRemaining_NoOverflow_PastEnd() (gas: 17255)
+[PASS] test_GetTimeRemaining_OverflowSafe_AfterStart() (gas: 17175)
+[PASS] test_GetTimeRemaining_OverflowSafe_BeforeStart() (gas: 17173)
+[PASS] test_IsAuctionActive_AllConditions() (gas: 25159)
+[PASS] test_IsAuctionActive_ExactOverflowBoundary() (gas: 17082)
+[PASS] test_IsAuctionActive_InfiniteDuration_AfterStart() (gas: 16393)
+[PASS] test_IsAuctionActive_InfiniteDuration_AtStart() (gas: 12943)
+[PASS] test_IsAuctionActive_InfiniteDuration_BeforeStart() (gas: 15949)
+[PASS] test_IsAuctionActive_OverflowSafeEndTime_Active() (gas: 17103)
+[PASS] test_IsAuctionActive_OverflowSafeEndTime_BeforeStart() (gas: 17016)
+[PASS] test_IsAuctionEnded_ExactOverflowBoundary() (gas: 14100)
+[PASS] test_IsAuctionEnded_InfiniteDuration() (gas: 9138)
+[PASS] test_IsAuctionEnded_NoOverflow_JustBeforeEnd() (gas: 14938)
+[PASS] test_IsAuctionEnded_NoOverflow_JustEnded() (gas: 14897)
+[PASS] test_IsAuctionEnded_OverflowSafeEndTime() (gas: 14058)
+[PASS] test_TimeCalculation_BoundaryConditions() (gas: 32070)
+[PASS] test_VerifyCommitment_AllCombinations() (gas: 16082)
+[PASS] test_VerifyCommitment_WrongCommitmentFormat() (gas: 4088)
+Suite result: ok. 33 passed; 0 failed; 0 skipped; finished in 349.54ms (349.17ms CPU time)
+
+Ran 9 tests for test/AuctionLibTest.t.sol:AuctionLibTest
+[PASS] test_AuctionOverflowSafety() (gas: 18171)
+[PASS] test_FuzzCommitmentGeneration(address,uint256,uint256) (runs: 258, μ: 5535, ~: 5535)
+[PASS] test_FuzzCommitmentVerification(address,uint256,uint256,address,uint256,uint256) (runs: 258, μ: 6656, ~: 6656)
+[PASS] test_GenerateCommitment() (gas: 4926)
+[PASS] test_GetTimeRemaining() (gas: 15898)
+[PASS] test_InfiniteDurationAuction() (gas: 14540)
+[PASS] test_IsAuctionActive() (gas: 13660)
+[PASS] test_IsAuctionEnded() (gas: 10440)
+[PASS] test_VerifyCommitment() (gas: 9466)
+Suite result: ok. 9 passed; 0 failed; 0 skipped; finished in 90.92ms (90.63ms CPU time)
+
+Ran 28 tests for test/ChainlinkPriceOracle.t.sol:ChainlinkPriceOracleComprehensiveTest
+[PASS] test_AddPriceFeed() (gas: 47287)
+[PASS] test_AddPriceFeed_OnlyOwner() (gas: 21468)
+[PASS] test_Constructor() (gas: 18493)
+[PASS] test_EmptyAddressHandling() (gas: 64316)
+[PASS] test_ExtremePrices() (gas: 1157376)
+[PASS] test_FeedDeletion() (gas: 40283)
+[PASS] test_GetLastUpdateTime() (gas: 28944)
+[PASS] test_GetLastUpdateTime_NoPriceFeed() (gas: 17858)
+[PASS] test_GetPrice() (gas: 33110)
+[PASS] test_GetPriceAtTime() (gas: 35672)
+[PASS] test_GetPrice_InvalidPrice() (gas: 583048)
+[PASS] test_GetPrice_NoPriceFeed() (gas: 17617)
+[PASS] test_GetPrice_StalePrice() (gas: 35759)
+[PASS] test_GetPrice_ZeroPrice() (gas: 563215)
+[PASS] test_IsPriceStale_Fresh() (gas: 28844)
+[PASS] test_IsPriceStale_NoPriceFeed() (gas: 17771)
+[PASS] test_IsPriceStale_Stale() (gas: 35284)
+[PASS] test_MultiplePriceFeeds() (gas: 90269)
+[PASS] test_PairKeyGeneration() (gas: 7284)
+[PASS] test_PriceFeedOverwrite() (gas: 568379)
+[PASS] test_PriceNormalization_18Decimals() (gas: 584514)
+[PASS] test_PriceNormalization_1Decimal() (gas: 585438)
+[PASS] test_PriceNormalization_6Decimals() (gas: 585459)
+[PASS] test_PriceNormalization_HighDecimals() (gas: 585423)
+[PASS] test_RemovePriceFeed() (gas: 28998)
+[PASS] test_RemovePriceFeed_OnlyOwner() (gas: 18990)
+[PASS] test_SamePairDifferentOrder() (gas: 577745)
+[PASS] test_TimeBoundaryConditions() (gas: 43881)
+Suite result: ok. 28 passed; 0 failed; 0 skipped; finished in 15.09ms (12.50ms CPU time)
+
+Ran 29 tests for test/EigenLVRAVSServiceManager.t.sol:EigenLVRAVSServiceManagerTest
+[PASS] test_AddStake() (gas: 148863)
+[PASS] test_AddStake_NotRegistered() (gas: 20502)
+[PASS] test_ChallengeTask() (gas: 1167616)
+[PASS] test_ChallengeTask_InsufficientStake() (gas: 503417)
+[PASS] test_Constructor() (gas: 15352)
+[PASS] test_CreateAuctionTask() (gas: 505125)
+[PASS] test_CreateAuctionTask_InsufficientOperators() (gas: 16687)
+[PASS] test_CreateAuctionTask_OnlyOwner() (gas: 350355)
+[PASS] test_DeregisterOperator() (gas: 130098)
+[PASS] test_DeregisterOperator_NotRegistered() (gas: 13754)
+[PASS] test_FundRewardPool() (gas: 40729)
+[PASS] test_HasQuorum() (gas: 348758)
+[PASS] test_InvalidTaskIndex() (gas: 351621)
+[PASS] test_ReceiveETH() (gas: 41230)
+[PASS] test_RegisterOperator() (gas: 149822)
+[PASS] test_RegisterOperator_AlreadyRegistered() (gas: 150245)
+[PASS] test_RegisterOperator_InsufficientStake() (gas: 26294)
+[PASS] test_RespondToTask() (gas: 688871)
+[PASS] test_RespondToTask_AlreadyResponded() (gas: 675507)
+[PASS] test_RespondToTask_DeadlinePassed() (gas: 497405)
+[PASS] test_RespondToTask_NotRegistered() (gas: 497939)
+[PASS] test_SlashOperator() (gas: 386811)
+[PASS] test_SlashOperator_InsufficientStake() (gas: 352953)
+[PASS] test_SlashOperator_OnlyOwner() (gas: 350543)
+[PASS] test_TaskAlreadyCompleted() (gas: 1132101)
+[PASS] test_TaskCompletion_NoConsensus() (gas: 1054787)
+[PASS] test_TaskCompletion_WithQuorum() (gas: 1135618)
+[PASS] test_Withdraw() (gas: 25707)
+[PASS] test_Withdraw_OnlyOwner() (gas: 13529)
+Suite result: ok. 29 passed; 0 failed; 0 skipped; finished in 36.73ms (35.67ms CPU time)
+
+Ran 22 tests for test/EigenLVRAdminTests.t.sol:EigenLVRAdminTests
+[PASS] test_Constructor_Owner() (gas: 13486)
+[FAIL: EigenLVR: auction not active] test_OnlyAuthorizedOperator_Success() (gas: 47733)
+[PASS] test_OnlyAuthorizedOperator_Unauthorized() (gas: 17614)
+[PASS] test_Pause_AlreadyPaused() (gas: 19813)
+[PASS] test_Pause_Success() (gas: 19404)
+[PASS] test_Pause_Unauthorized() (gas: 13527)
+[PASS] test_SetFeeRecipient_Success() (gas: 22869)
+[PASS] test_SetFeeRecipient_Unauthorized() (gas: 16139)
+[PASS] test_SetFeeRecipient_ZeroAddress() (gas: 14374)
+[PASS] test_SetLVRThreshold_Event() (gas: 23547)
+[PASS] test_SetLVRThreshold_MaxValid() (gas: 21787)
+[PASS] test_SetLVRThreshold_Success() (gas: 21742)
+[PASS] test_SetLVRThreshold_TooHigh() (gas: 14241)
+[PASS] test_SetLVRThreshold_Unauthorized() (gas: 13920)
+[PASS] test_SetLVRThreshold_Zero() (gas: 17119)
+[PASS] test_SetOperatorAuthorization_Deauthorize() (gas: 35089)
+[PASS] test_SetOperatorAuthorization_Event() (gas: 42205)
+[PASS] test_SetOperatorAuthorization_Success() (gas: 42168)
+[PASS] test_SetOperatorAuthorization_Unauthorized() (gas: 16535)
+[PASS] test_Unpause_AlreadyUnpaused() (gas: 13658)
+[PASS] test_Unpause_Success() (gas: 22071)
+[PASS] test_Unpause_Unauthorized() (gas: 21918)
+Suite result: FAILED. 21 passed; 1 failed; 0 skipped; finished in 3.82ms (2.90ms CPU time)
+
+Ran 4 tests for test/EigenLVRComponents.t.sol:ChainlinkOracleIntegrationTest
+[PASS] test_GetPrice() (gas: 30825)
+[PASS] test_InvalidPrice() (gas: 43822)
+[PASS] test_PriceNormalization() (gas: 939675)
+[PASS] test_StalePrice() (gas: 32808)
+Suite result: ok. 4 passed; 0 failed; 0 skipped; finished in 2.00ms (1.45ms CPU time)
+
+Ran 7 tests for test/EigenLVRComponents.t.sol:EigenLVRComponentTest
+[PASS] test_AuctionLib_AuctionState() (gas: 5430)
+[PASS] test_AuctionLib_GenerateCommitment() (gas: 4902)
+[PASS] test_AuctionLib_VerifyCommitment() (gas: 9086)
+[PASS] test_Constants_Validation() (gas: 939)
+[PASS] test_LVR_ThresholdCalculation() (gas: 6339)
+[PASS] test_MEV_Distribution() (gas: 7283)
+[PASS] test_SwapSignificance() (gas: 3993)
+Suite result: ok. 7 passed; 0 failed; 0 skipped; finished in 728.24µs (520.96µs CPU time)
+
+Ran 12 tests for test/EigenLVRHook.t.sol:EigenLVRHookTest
+[PASS] test_AfterSwap_NoActiveAuction() (gas: 26435)
+[PASS] test_AfterSwap_WithCompletedAuction() (gas: 297772)
+[PASS] test_BeforeAddLiquidity() (gas: 75490)
+[PASS] test_BeforeAddLiquidity_MultipleLPs() (gas: 107427)
+[PASS] test_BeforeAddLiquidity_ZeroLiquidity() (gas: 33778)
+[PASS] test_BeforeRemoveLiquidity() (gas: 83580)
+[PASS] test_BeforeRemoveLiquidity_ZeroRemoval() (gas: 81588)
+[PASS] test_BeforeSwap_NoAuctionTrigger() (gas: 53121)
+[PASS] test_BeforeSwap_Paused() (gas: 31530)
+[PASS] test_BeforeSwap_TriggerAuction() (gas: 202355)
+[PASS] test_Constructor() (gas: 31874)
+[PASS] test_GetHookPermissions() (gas: 20700)
+Suite result: ok. 12 passed; 0 failed; 0 skipped; finished in 5.35ms (4.18ms CPU time)
+
+Ran 24 tests for test/EigenLVRHookAdmin.t.sol:EigenLVRHookAdminTest
+[FAIL: NotPoolManager()] test_ClaimRewards() (gas: 17562)
+[PASS] test_ClaimRewards_NoLiquidity() (gas: 21481)
+[FAIL: NotPoolManager()] test_ClaimRewards_NoRewards() (gas: 17564)
+[PASS] test_Constants() (gas: 19144)
+[PASS] test_OnlyAuthorizedOperator_Modifier() (gas: 35106)
+[PASS] test_Pause() (gas: 19469)
+[PASS] test_Pause_OnlyOwner() (gas: 13485)
+[PASS] test_ReceiveETH() (gas: 16478)
+[PASS] test_SetFeeRecipient() (gas: 20522)
+[PASS] test_SetFeeRecipient_OnlyOwner() (gas: 14027)
+[PASS] test_SetFeeRecipient_ZeroAddress() (gas: 14352)
+[PASS] test_SetLVRThreshold() (gas: 24146)
+[PASS] test_SetLVRThreshold_MaxAllowed() (gas: 21879)
+[PASS] test_SetLVRThreshold_OnlyOwner() (gas: 14012)
+[PASS] test_SetLVRThreshold_TooHigh() (gas: 14267)
+[PASS] test_SetOperatorAuthorization() (gas: 44659)
+[PASS] test_SetOperatorAuthorization_Deauthorize() (gas: 37099)
+[PASS] test_SetOperatorAuthorization_OnlyOwner() (gas: 16468)
+[FAIL: NotPoolManager()] test_SubmitAuctionResult() (gas: 69681)
+[FAIL: NotPoolManager()] test_SubmitAuctionResult_AuctionNotEnded() (gas: 34724)
+[PASS] test_SubmitAuctionResult_InactiveAuction() (gas: 45591)
+[FAIL: NotPoolManager()] test_SubmitAuctionResult_UnauthorizedOperator() (gas: 34746)
+[PASS] test_Unpause() (gas: 22139)
+[PASS] test_Unpause_OnlyOwner() (gas: 21920)
+Suite result: FAILED. 19 passed; 5 failed; 0 skipped; finished in 5.25ms (4.02ms CPU time)
+
+Ran 7 tests for test/EigenLVRHookAuction.t.sol:EigenLVRHookAuctionTest
+[FAIL: NotPoolManager()] test_AuctionLifecycle_Complete() (gas: 34706)
+[FAIL: NotPoolManager()] test_AuctionTrigger_DuplicateAuction() (gas: 34704)
+[FAIL: NotPoolManager()] test_IsSignificantSwap() (gas: 34892)
+[FAIL: NotPoolManager()] test_ProcessAuctionResult_ZeroBid() (gas: 34642)
+[FAIL: NotPoolManager()] test_ShouldTriggerAuction_False_SmallDeviation() (gas: 34709)
+[FAIL: NotPoolManager()] test_ShouldTriggerAuction_False_SmallSwap() (gas: 34666)
+[FAIL: NotPoolManager()] test_ShouldTriggerAuction_True() (gas: 34710)
+Suite result: FAILED. 0 passed; 7 failed; 0 skipped; finished in 3.11ms (1.69ms CPU time)
+
+Ran 24 tests for test/EigenLVRHookUnit.t.sol:EigenLVRHookUnitTest
+[PASS] testFuzz_PercentageCalculations(uint256) (runs: 258, μ: 23288, ~: 23288)
+[PASS] testFuzz_SetLVRThreshold(uint256) (runs: 256, μ: 21797, ~: 22502)
+[PASS] testFuzz_SetLVRThreshold_Invalid(uint256) (runs: 258, μ: 14975, ~: 14975)
+[PASS] test_AuthorizationPattern() (gas: 70663)
+[PASS] test_Constants() (gas: 19144)
+[PASS] test_Constructor() (gas: 23397)
+[PASS] test_GetHookPermissions() (gas: 20766)
+[PASS] test_Pause() (gas: 19402)
+[PASS] test_Pause_OnlyOwner() (gas: 13529)
+[PASS] test_PercentageCalculations() (gas: 21231)
+[PASS] test_PercentageCalculations_SmallAmounts() (gas: 20015)
+[PASS] test_PercentageCalculations_ZeroAmount() (gas: 20025)
+[PASS] test_SetFeeRecipient() (gas: 20609)
+[PASS] test_SetFeeRecipient_OnlyOwner() (gas: 14005)
+[PASS] test_SetFeeRecipient_ZeroAddress() (gas: 14352)
+[PASS] test_SetLVRThreshold() (gas: 21829)
+[PASS] test_SetLVRThreshold_MaxAllowed() (gas: 21857)
+[PASS] test_SetLVRThreshold_OnlyOwner() (gas: 14012)
+[PASS] test_SetLVRThreshold_TooHigh() (gas: 14377)
+[PASS] test_SetOperatorAuthorization() (gas: 42079)
+[PASS] test_SetOperatorAuthorization_Deauthorize() (gas: 35089)
+[PASS] test_SetOperatorAuthorization_OnlyOwner() (gas: 16534)
+[PASS] test_Unpause() (gas: 22072)
+[PASS] test_Unpause_OnlyOwner() (gas: 21920)
+Suite result: ok. 24 passed; 0 failed; 0 skipped; finished in 269.42ms (268.46ms CPU time)
+
+Ran 1 test for test/HookDeploymentDebugTest.t.sol:HookDeploymentDebugTest
+[FAIL: HookAddressNotValid(0x43563B7ec6CcfccA8dE226aCaD438cF122D77BE4)] test_DebugHookDeployment() (gas: 908270)
+Logs:
+  Required flags: 2752
+  Creation code length: 18539
+  Constructor args length: 160
+  Mining hook address...
+  Found hook address: 0x43563B7ec6CcfccA8dE226aCaD438cF122D77BE4
+  Salt: 0x0000000000000000000000000000000000000000000000000000000000000036
+  Address has required flags: true
+
+Suite result: FAILED. 0 passed; 1 failed; 0 skipped; finished in 9.45ms (8.95ms CPU time)
+
+Ran 19 tests for test/HookMiner.t.sol:HookMinerTest
+[PASS] testFuzz_ComputeAddress_Deterministic(address,bytes32,bytes) (runs: 258, μ: 6677, ~: 6668)
+[PASS] testFuzz_Find_ValidFlags(uint160) (runs: 258, μ: 3408365, ~: 141552)
+[PASS] test_ComputeAddress() (gas: 6152)
+[PASS] test_ComputeAddress_DifferentInputs() (gas: 10377)
+[PASS] test_ComputeAddress_EmptyBytecode() (gas: 4309)
+[PASS] test_ComputeAddress_ZeroDeployer() (gas: 4378)
+[PASS] test_ComputeAddress_ZeroSalt() (gas: 4357)
+[PASS] test_Find_AllFlags() (gas: 643147)
+[PASS] test_Find_DifferentBytecode() (gas: 9451)
+[PASS] test_Find_DifferentConstructorArgs() (gas: 8228)
+[PASS] test_Find_DifferentDeployer() (gas: 9423)
+[PASS] test_Find_EdgeCase_VeryHighFlags() (gas: 520300)
+[PASS] test_Find_LargeConstructorArgs() (gas: 168734)
+[FAIL: assertion failed] test_Find_LargeCreationCode() (gas: 321494)
+[PASS] test_Find_NoFlags() (gas: 5777)
+[PASS] test_Find_ReturnDelta_Flags() (gas: 42752)
+[PASS] test_Find_Sequential_Salts() (gas: 5757)
+[PASS] test_Find_SingleFlag() (gas: 5208)
+[PASS] test_Find_ValidAddress() (gas: 8067)
+Suite result: FAILED. 18 passed; 1 failed; 0 skipped; finished in 8.11s (8.11s CPU time)
+
+Ran 18 tests for test/HookMinerComprehensive.t.sol:HookMinerComprehensive
+[PASS] testFuzz_ComputeAddress_Deterministic(address,bytes32,bytes) (runs: 258, μ: 7192, ~: 7183)
+[PASS] testFuzz_Find_SimpleFlags(uint8) (runs: 257, μ: 14438, ~: 12143)
+[PASS] test_ComputeAddress_Deterministic() (gas: 6195)
+[PASS] test_ComputeAddress_DifferentInputs() (gas: 7566)
+[PASS] test_ComputeAddress_EmptyBytecode() (gas: 4376)
+[PASS] test_ComputeAddress_ZeroValues() (gas: 4354)
+[PASS] test_Find_DifferentBytecode() (gas: 9378)
+[PASS] test_Find_DifferentConstructorArgs() (gas: 13978)
+[PASS] test_Find_DifferentDeployers() (gas: 10522)
+[PASS] test_Find_EasyFlags() (gas: 5261)
+[FAIL: assertion failed] test_Find_LargerBytecode() (gas: 69002)
+[PASS] test_Find_MediumFlags() (gas: 9218)
+[PASS] test_Find_NoFlags() (gas: 5741)
+[PASS] test_Find_ReasonableTimeout() (gas: 5939)
+[PASS] test_Find_SequentialSalts() (gas: 9215)
+[PASS] test_Find_SingleFlag_Realistic() (gas: 9179)
+[PASS] test_GasEfficiency_NoFlags() (gas: 5351)
+[PASS] test_GasEfficiency_SimpleFlag() (gas: 5356)
+Suite result: FAILED. 17 passed; 1 failed; 0 skipped; finished in 181.48ms (181.18ms CPU time)
+
+Ran 1 test for test/HookMinerDebugTest.t.sol:HookMinerDebugTest
+[PASS] test_DebugFlags() (gas: 17219)
+Logs:
+  BEFORE_ADD_LIQUIDITY_FLAG: 2048
+  BEFORE_REMOVE_LIQUIDITY_FLAG: 512
+  BEFORE_SWAP_FLAG: 128
+  AFTER_SWAP_FLAG: 64
+  REQUIRED_FLAGS: 2752
+  Starting mining...
+  Found address for BEFORE_SWAP_FLAG: 0x58308AB27b28B852bDE67C8880362f1069496AC2
+  Salt: 0x0000000000000000000000000000000000000000000000000000000000000000
+  Address has flag: true
+
+Suite result: ok. 1 passed; 0 failed; 0 skipped; finished in 451.12µs (241.08µs CPU time)
+
+Ran 14 tests for test/HookMinerFixed.t.sol:HookMinerFixedTest
+[PASS] testFuzz_ComputeAddress_Deterministic(address,bytes32,bytes) (runs: 258, μ: 6742, ~: 6733)
+[PASS] testFuzz_Find_ValidFlags_Limited(uint16) (runs: 258, μ: 8366, ~: 570)
+[PASS] test_ComputeAddress() (gas: 6152)
+[PASS] test_ComputeAddress_DifferentInputs() (gas: 7617)
+[PASS] test_ComputeAddress_EdgeCases() (gas: 7588)
+[PASS] test_Find_DifferentBytecode() (gas: 9407)
+[PASS] test_Find_DifferentDeployer() (gas: 9385)
+[PASS] test_Find_LiquidityFlags() (gas: 8098)
+[FAIL: assertion failed] test_Find_MultipleFlags() (gas: 5736)
+[PASS] test_Find_NoFlags() (gas: 5732)
+[PASS] test_Find_ReasonableGasUsage() (gas: 5951)
+[PASS] test_Find_Sequential_Different_Results() (gas: 8252)
+[FAIL: assertion failed] test_Find_SingleFlag_AfterSwap() (gas: 5774)
+[FAIL: assertion failed] test_Find_SingleFlag_BeforeSwap() (gas: 5751)
+Suite result: FAILED. 11 passed; 3 failed; 0 skipped; finished in 99.53ms (99.31ms CPU time)
+
+Ran 38 tests for test/ProductionPriceFeedConfig.t.sol:ProductionPriceFeedConfigTest
+[PASS] test_AddCustomPriceFeed() (gas: 51838)
+[PASS] test_AddCustomPriceFeed_OnlyOwner() (gas: 14759)
+[PASS] test_AddCustomPriceFeed_ZeroAddresses() (gas: 21989)
+[PASS] test_AutoConfigureNetwork_Arbitrum() (gas: 144206)
+[PASS] test_AutoConfigureNetwork_Base() (gas: 113934)
+[PASS] test_AutoConfigureNetwork_Mainnet() (gas: 204705)
+[PASS] test_AutoConfigureNetwork_OnlyOwner() (gas: 14065)
+[PASS] test_AutoConfigureNetwork_Sepolia() (gas: 113879)
+[PASS] test_AutoConfigureNetwork_UnsupportedNetwork() (gas: 14512)
+[PASS] test_BatchAddPriceFeeds() (gas: 91986)
+[PASS] test_BatchAddPriceFeeds_EmptyArray() (gas: 13712)
+[PASS] test_BatchAddPriceFeeds_OnlyOwner() (gas: 15919)
+[PASS] test_BatchOperations_LargeArray() (gas: 364874)
+[PASS] test_ChainIdHandling() (gas: 20219)
+[PASS] test_ConfigureArbitrum() (gas: 146273)
+[PASS] test_ConfigureArbitrum_AlreadyConfigured() (gas: 143840)
+[PASS] test_ConfigureArbitrum_OnlyOwner() (gas: 14023)
+[PASS] test_ConfigureBase() (gas: 115959)
+[PASS] test_ConfigureBase_AlreadyConfigured() (gas: 113548)
+[PASS] test_ConfigureBase_OnlyOwner() (gas: 14067)
+[PASS] test_ConfigureMainnet() (gas: 206890)
+[PASS] test_ConfigureMainnet_AlreadyConfigured() (gas: 204481)
+[PASS] test_ConfigureMainnet_OnlyOwner() (gas: 14112)
+[PASS] test_ConfigureSepolia() (gas: 116036)
+[PASS] test_ConfigureSepolia_AlreadyConfigured() (gas: 113649)
+[PASS] test_ConfigureSepolia_OnlyOwner() (gas: 14110)
+[PASS] test_Constructor() (gas: 17581)
+[PASS] test_EmergencyReconfigure() (gas: 261343)
+[PASS] test_EmergencyReconfigure_OnlyOwner() (gas: 14046)
+[PASS] test_EmergencyReconfigure_UnsupportedNetwork() (gas: 16897)
+[PASS] test_GetCurrentNetworkName() (gas: 29845)
+[PASS] test_IsCurrentNetworkConfigured_False() (gas: 11663)
+[PASS] test_IsCurrentNetworkConfigured_True() (gas: 203908)
+[PASS] test_MultipleNetworkConfiguration() (gas: 536990)
+[PASS] test_NetworkConfigurationIndependence() (gas: 217249)
+[PASS] test_ReconfigurationAfterEmergency() (gas: 261406)
+[PASS] test_RemovePriceFeed() (gas: 44232)
+[PASS] test_RemovePriceFeed_OnlyOwner() (gas: 14328)
+Suite result: ok. 38 passed; 0 failed; 0 skipped; finished in 13.93ms (12.97ms CPU time)
+
+Ran 19 tests for test/UnitTestsForCoverage.t.sol:UnitTestsForCoverage
+[FAIL: assertion failed: 101965907304900480912075588456166 != 0; counterexample: calldata=0xf7aabf2c000000000000000000000000000000000000000072abef8790477eb46ac727fa00000000000000000000000000000000000005068af1ba73deab0806e0a0c6630000000000000000000000000000000000000000000000000000004325329f770000000000000000000000000000000000000000000000000000000000000001 args=[35489148581083712797654067194 [3.548e28], 101930418156319397199566321272419 [1.019e32], 288386883447 [2.883e11], true]] testFuzz_AuctionTiming(uint128,uint128,uint128,bool) (runs: 0, μ: 0, ~: 0)
+[FAIL: panic: arithmetic underflow or overflow (0x11); counterexample: calldata=0x0d7350b30000000000000000000000005d42ec97745f4c72964ac6e58e0b0f81e67838d3000000000000000000000000000000000000000002c1a2bdb872fec69cc88c22ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff args=[0x5d42Ec97745F4C72964Ac6E58e0B0f81e67838D3, 853061225924133961108851746 [8.53e26], 115792089237316195423570985008687907853269984665640564039457584007913129639935 [1.157e77]]] testFuzz_CommitmentGeneration(address,uint256,uint256) (runs: 0, μ: 0, ~: 0)
+[PASS] testFuzz_HookMinerDeterministic(address,bytes32,bytes) (runs: 258, μ: 7213, ~: 7204)
+[FAIL: assertion failed: 1000 != 0] test_AuctionLib_BasicTiming() (gas: 102299)
+[PASS] test_AuctionLib_BidStructCreation() (gas: 6125)
+[PASS] test_AuctionLib_CommitmentEdgeCases() (gas: 7172)
+[PASS] test_AuctionLib_CommitmentGeneration() (gas: 4991)
+[PASS] test_AuctionLib_CommitmentVerification() (gas: 9444)
+[PASS] test_AuctionLib_InactiveAuction() (gas: 73884)
+[PASS] test_AuctionLib_InfiniteDuration() (gas: 97579)
+[PASS] test_AuctionLib_OverflowProtection() (gas: 94923)
+[PASS] test_AuctionLib_StructCreation() (gas: 8126)
+[PASS] test_HookMiner_ComputeAddress_Basic() (gas: 4413)
+[PASS] test_HookMiner_ComputeAddress_Deterministic() (gas: 5591)
+[PASS] test_HookMiner_ComputeAddress_DifferentInputs() (gas: 7545)
+[PASS] test_HookMiner_ComputeAddress_EdgeCases() (gas: 7654)
+[PASS] test_HookMiner_Find_NoFlags() (gas: 6310)
+[PASS] test_HookMiner_Find_SimpleFlags() (gas: 7471)
+[PASS] test_MockComponents() (gas: 733659)
+Suite result: FAILED. 16 passed; 3 failed; 0 skipped; finished in 40.83ms (40.47ms CPU time)
+
+Ran 19 test suites in 9.38s (9.35s CPU time): 320 tests passed, 22 failed, 0 skipped (342 total tests)
+
+Failing tests:
+Encountered 1 failing test in test/EigenLVRAdminTests.t.sol:EigenLVRAdminTests
+[FAIL: EigenLVR: auction not active] test_OnlyAuthorizedOperator_Success() (gas: 47733)
+
+Encountered 5 failing tests in test/EigenLVRHookAdmin.t.sol:EigenLVRHookAdminTest
+[FAIL: NotPoolManager()] test_ClaimRewards() (gas: 17562)
+[FAIL: NotPoolManager()] test_ClaimRewards_NoRewards() (gas: 17564)
+[FAIL: NotPoolManager()] test_SubmitAuctionResult() (gas: 69681)
+[FAIL: NotPoolManager()] test_SubmitAuctionResult_AuctionNotEnded() (gas: 34724)
+[FAIL: NotPoolManager()] test_SubmitAuctionResult_UnauthorizedOperator() (gas: 34746)
+
+Encountered 7 failing tests in test/EigenLVRHookAuction.t.sol:EigenLVRHookAuctionTest
+[FAIL: NotPoolManager()] test_AuctionLifecycle_Complete() (gas: 34706)
+[FAIL: NotPoolManager()] test_AuctionTrigger_DuplicateAuction() (gas: 34704)
+[FAIL: NotPoolManager()] test_IsSignificantSwap() (gas: 34892)
+[FAIL: NotPoolManager()] test_ProcessAuctionResult_ZeroBid() (gas: 34642)
+[FAIL: NotPoolManager()] test_ShouldTriggerAuction_False_SmallDeviation() (gas: 34709)
+[FAIL: NotPoolManager()] test_ShouldTriggerAuction_False_SmallSwap() (gas: 34666)
+[FAIL: NotPoolManager()] test_ShouldTriggerAuction_True() (gas: 34710)
+
+Encountered 1 failing test in test/HookDeploymentDebugTest.t.sol:HookDeploymentDebugTest
+[FAIL: HookAddressNotValid(0x43563B7ec6CcfccA8dE226aCaD438cF122D77BE4)] test_DebugHookDeployment() (gas: 908270)
+
+Encountered 1 failing test in test/HookMiner.t.sol:HookMinerTest
+[FAIL: assertion failed] test_Find_LargeCreationCode() (gas: 321494)
+
+Encountered 1 failing test in test/HookMinerComprehensive.t.sol:HookMinerComprehensive
+[FAIL: assertion failed] test_Find_LargerBytecode() (gas: 69002)
+
+Encountered 3 failing tests in test/HookMinerFixed.t.sol:HookMinerFixedTest
+[FAIL: assertion failed] test_Find_MultipleFlags() (gas: 5736)
+[FAIL: assertion failed] test_Find_SingleFlag_AfterSwap() (gas: 5774)
+[FAIL: assertion failed] test_Find_SingleFlag_BeforeSwap() (gas: 5751)
+
+Encountered 3 failing tests in test/UnitTestsForCoverage.t.sol:UnitTestsForCoverage
+[FAIL: assertion failed: 101965907304900480912075588456166 != 0; counterexample: calldata=0xf7aabf2c000000000000000000000000000000000000000072abef8790477eb46ac727fa00000000000000000000000000000000000005068af1ba73deab0806e0a0c6630000000000000000000000000000000000000000000000000000004325329f770000000000000000000000000000000000000000000000000000000000000001 args=[35489148581083712797654067194 [3.548e28], 101930418156319397199566321272419 [1.019e32], 288386883447 [2.883e11], true]] testFuzz_AuctionTiming(uint128,uint128,uint128,bool) (runs: 0, μ: 0, ~: 0)
+[FAIL: panic: arithmetic underflow or overflow (0x11); counterexample: calldata=0x0d7350b30000000000000000000000005d42ec97745f4c72964ac6e58e0b0f81e67838d3000000000000000000000000000000000000000002c1a2bdb872fec69cc88c22ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff args=[0x5d42Ec97745F4C72964Ac6E58e0B0f81e67838D3, 853061225924133961108851746 [8.53e26], 115792089237316195423570985008687907853269984665640564039457584007913129639935 [1.157e77]]] testFuzz_CommitmentGeneration(address,uint256,uint256) (runs: 0, μ: 0, ~: 0)
+[FAIL: assertion failed: 1000 != 0] test_AuctionLib_BasicTiming() (gas: 102299)
+
+Encountered a total of 22 failing tests, 320 tests succeeded
